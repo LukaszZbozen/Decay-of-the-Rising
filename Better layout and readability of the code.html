@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)file:///C:/Users/Luke/AppData/Local/Temp/51e5eb05-7c45-4ece-93b5-ff703ffef63c.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Decay of the Rising
+</title>
+
+<style>
+body
+{
+	font: 10pt Cousine, monospace;
+	margin: 2em;
+}
+
+h1
+{
+	font-size: 14pt;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+tw-storydata
+{
+	display: block !important;
+}
+
+tw-passagedata
+{
+	display: block !important;
+	line-height: 200%;
+	margin-bottom: 2em;
+	white-space: pre-wrap;
+}
+
+tw-passagedata + tw-passagedata
+{
+	border-top: 1pt dashed black;
+	padding-top: 2em;
+}
+
+tw-passagedata:before
+{
+	content: attr(name);
+	display: block;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Decay of the Rising
+</h1>
+<tw-storydata name="Decay of the Rising" startnode="1" creator="Twine" creator-version="2.3.5" ifid="4C85C1FA-12B1-41CF-9241-275E9268A453" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*	
+	Google Fonts:
+	https://fonts.google.com/
+*/
+@import url(https://fonts.googleapis.com/css?family=Tahoma);
+/* These are the default options for the entire browser window */
+body, tw-story {	
+	background-color: #000; 
+	/* Color is the foreground / font color */
+	color: #fff;
+	/* Make sure the first font listed is one of the fonts you imported above */
+	font-family: 'Tahoma', Helvetica, sans-serif;
+	/* This makes the font size for normal letters just a little bit bigger than default */
+	font-size: 1.1em;
+  	width: 100%;
+	line-height: 1.5em;
+}
+
+tw-passage {
+  /* 
+		This lets the story take up most of its width up to a maximum readable width 
+		an `em` is about the width of one of your letters.  max-width lets the size
+		get wider and wider with the size of the window but only to a sane point
+		
+		It's ok to experiment with making this smaller or larger
+	*/
+    max-width: 55em;
+	/* This centers the main story column in the window */
+    margin: 0 auto 0 auto;
+}
+
+/*
+  BASIC LINK STYLES
+  
+  This covers various different kinds of links in Harlowe
+*/
+.enchantment-link, tw-link, a {
+  /*Extends dimension of keypad click*/
+  	padding: 5px 30px 5px 30px;
+ 	margin: -15px;
+  	
+	color: #75d1c4; 
+	font-weight: bold; 
+	/* Adds a glow to links.  You can make it a seperate color from the text 
+	   The numbers mean, in order: 
+	   - How far to the right of the letter (0 means radiating from the letter)
+	   - How far below the letter
+	   - How much blur does the glow/shadow have
+	   - What color is the shadow
+	*/
+	text-shadow: 0 0 5px #313131;
+}
+
+/* Links when the mouse is over them */
+.enchantment-link:hover, tw-link:hover, a:hover {
+	color: #cb1616; 
+	font-weight: bold; 
+	text-shadow: 0 0 5px #bd1717;
+}
+
+/* Hide back and forth default buttons */
+.redo {display: none;}
+.undo {display:none;}
+
+
+/*Styling for images in the game*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+/*Dropdown menu CSS styling for Save, Load and restart*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000; 
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+/*Fix the colour issue with drop down menu at character creation*/
+option {
+    color: #fff;
+    background-color: #000;
+}
+
+
+/*Design for keypad buttons*/
+td {
+  width: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: #00FF00;
+  
+
+  margin: 10px;
+  box-shadow: 0px 0px 5px #00FF00;
+  border-radius: 3px;
+}
+
+td:hover {
+  box-shadow: 0px 0px 5px #00FFFF;
+  color: #00FFFF;  
+}
+
+td:active {
+  box-shadow: 0px 0px 5px #28B6FC;
+  color: #28B6FC;
+}
+
+
+/*Keypad CSS design*/
+.keypadEntry {
+  display: inline-block;
+  color: #00FF00;
+  padding: 10px 15px 10px 15px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px #00FF00;
+  border-radius: 3px;
+}
+
+/* When a mouse is hovered over keypad change colour*/
+.keypadEntry:hover {
+  box-shadow: 0px 0px 5px #00FFFF;
+  color: #00FFFF;  
+}
+
+/* When a button is clicked it becomes "active" */
+.keypadEntry:active {
+  box-shadow: 0px 0px 5px #28B6FC;
+  color: #28B6FC;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+
+/*Design for paper sheet in the bedroom code*/
+.paper {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    min-width: 400px;
+    height: 480px;
+    margin: 0 auto;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+.paper:before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 60px;
+    background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+    background-size: 30px 30px;
+    border-right: 3px solid #D44147;
+    box-sizing: border-box;
+}
+
+.paper-content {
+    position: absolute;
+    top: 30px; right: 0; bottom: 30px; left: 60px;
+    background: linear-gradient(transparent, transparent 28px, #91D1D3 28px);
+    background-size: 30px 30px;
+}
+
+.paper-content textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: mediumblue;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">var aud = new Audio();
+aud.src = 'https://tempassetsplease.yolasite.com/resources/y2mate.com%20-%20Toe%20-%20Metronome_3CibBtq_7Pw.mp3';
+
+</script><tw-tag name="Game-Logo" color="purple"></tw-tag>,<tw-tag name="footer" color="blue"></tw-tag>,<tw-tag name="header" color="yellow"></tw-tag>,<tw-tag name="startup" color="green"></tw-tag><tw-passagedata pid="1" name="Welcome screen" tags="Game-Logo" position="50,75" size="100,100">&lt;h3&gt;Decay of the Rising&lt;/h3&gt;
+&lt;img src="https://tempassetsplease.yolasite.com/resources/2.jpg" alt="Zombies"&gt;
+[&lt;script&gt;
+aud.pause();
+aud.currentTime = 0;
+&lt;/script&gt;]
+
+[[Start Game-&gt;Character Creation]]
+[[Tutorial-&gt;Tutorial]]
+[[About]]
+(link: "Exit Game")[&lt;script&gt;window.close()&lt;/script&gt;]
+
+</tw-passagedata><tw-passagedata pid="2" name="Backstory" tags="Backstory" position="75,425" size="100,100">The year is 2020 and London has fallen, the leftover survirors live in post-apocaliptic society. The mysterious virus has infected the majority of the worldwide population and it is spreading rapidly causing strange and aggressive behaviour in the infected individuals, also known as freaks. 
+
+&lt;img src="https://tempassetsplease.yolasite.com/resources/Big%20Ben%20London%20Apocalypse%20-%201920x1200.jpg" alt="Image of post apocalitpic London"&gt;
+
+You had high hopes for the support from a government and an army arrival without any luck so far, as you are running low on supplies you must take the matters into your own hands and go out scavanging. 
+
+You decide to check the local shops in your area for supplies.
+
+
+The story of [[$playerName-&gt;Story Path]] begins...
+
+</tw-passagedata><tw-passagedata pid="3" name="About" tags="" position="550,50" size="100,100">Narrative Story Design: Lukasz Zbozen
+Programming: Lukasz Zbozen
+
+Images: http://clipart-library.com/
+		https://visualcocaine.org/
+		https://pixabay.com/
+
+Camp music: Mirrors (Acoustic) · Zander Reese
+The Unplugged EP
+℗ Transient Enterprises
+
+Background music: Toe - Metronome
+
+This is a work of fiction; any resemblance to actual persons, places, or events is unintended.
+
+I do not claim any copyright over or ownership of any images or sound used in the game. The use of these images in this non-commercial venture is intended as "fair use" and "fair dealings" as applicable. The use of these images is expressly intended not to contribute to the release of any of these images into the public domain. No copyright infringement intended. All rights go to their respective owners.
+
+Disclaimer: This game is fully dedicated to practical project at University of East Anglia for module HUM-5008B: Video Games: Theory, Practice, and Reception.
+
+[[Welcome screen&lt;-Menu]]
+
+Lukasz Zbozen 2020.</tw-passagedata><tw-passagedata pid="4" name="Story Path" tags="" position="300,250" size="100,100">Your name is $playerName, $playerAge years old, before everything turned to a mess you used to work in a $playerProfession field with a busy schedule and lack of spare time.
+
+You had to run away from the massive horde walking past, you got away far enough from the horde, trying to catch your breath, you feel very dehydretated and your heart is beating fast.
+
+[[Look around for the closest shop-&gt;Shop]]
+[[Sit down and rest-&gt;Sit Down]]
+[[Attempt to call someone -&gt;Calling unsuccessful]]
+
+[[Player Statistics]]
+
+</tw-passagedata><tw-passagedata pid="5" name="Shop" tags="" position="525,225" size="100,100">You scavenge the store and manage to find bottle of water, protein bar and a pack of painkillers.
+&lt;img src="https://tempassetsplease.yolasite.com/resources/shop%20background.jpg" alt="Shop Image"&gt;
+(set: $characterFood += 1)
+(set: $characterDrink += 1)
+(set: $characterMedicine += 1)
+Your current supplies:
+Food: $characterFood
+Drink: $characterDrink
+Medicine: $characterMedicine
+
+[[Continue-&gt;Eat?]]
+
+</tw-passagedata><tw-passagedata pid="6" name="Sit Down" tags="" position="500,500" size="100,100">While you were resting a freak silently approached and devoured you.
+
+You took 100 damage.
+(set: $characterHealth -= 100)
+Your current health: $characterHealth
+
+(if: $characterHealth is &gt;=35)[You are wounded!]
+(else-if: $characterHealth is &lt;= 0)[You died! Rip...]
+(else:)[Your wounds are fatal, you should probably heal!]
+
+</tw-passagedata><tw-passagedata pid="7" name="startup" tags="startup" position="700,50" size="100,100">(set: $characterHealth to 100)
+(set: $characterBullets to 0)
+(set: $characterMoney to 0)
+(set: $characterFood to 0)
+(set: $characterDrink to 0)
+(set: $characterMedicine to 0)
+(set: $playerName to "")
+(set: $playerAge to "")
+(set: $gender to "")
+(set: $playerProfession to "")
+(set: $characterEquipment to (array:"Backback"))
+
+{
+	(set: $entry to "")
+	(set: $entryLength to 3)
+	(set: $solution to "420")
+}
+
+
+[&lt;script&gt;
+
+var aud = new Audio();
+aud.src = 'https://tempassetsplease.yolasite.com/resources/y2mate.com%20-%20Toe%20-%20Metronome_3CibBtq_7Pw.mp3';
+
+
+&lt;/script&gt;]</tw-passagedata><tw-passagedata pid="8" name="header" tags="header" position="825,50" size="100,100"></tw-passagedata><tw-passagedata pid="9" name="footer" tags="footer" position="950,50" size="100,100">&lt;hr&gt;&lt;div class="dropdown"&gt;&lt;span&gt;Game options&lt;/span&gt;
+&lt;div class="dropdown-content"&gt;(link: "Save")[(save-game: "File A")]
+(link: "Load")[(load-game: "File A")]
+(link:"Restart")[(goto:"Welcome screen")]
+  &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Calling unsuccessful" tags="" position="550,375" size="100,100">The signal is down, I need to figure out something else before more freaks show up! Hmmm...
+[[Try something else-&gt;Story Path]]</tw-passagedata><tw-passagedata pid="11" name="Eat?" tags="" position="700,225" size="100,100">You feel hungry and dehydrated, it could be nice time to stop for a snack and a drink.
+
+[[Have a meal and a drink-&gt;Dinner time]]</tw-passagedata><tw-passagedata pid="12" name="Player Statistics" tags="" position="275,425" size="100,100">Statistics of the charater:
+Charater name: $playerName
+Character age: $playerAge
+Gender: $gender
+Profession: $playerProfession
+
+Your well being:
+Health: $characterHealth/100
+
+Your current supplies:
+Food: $characterFood
+Drink: $characterDrink
+Medicine: $characterMedicine
+Bullets: $characterBullets
+Money: $characterMoney
+
+Equipment:
+$characterEquipment
+
+[[Return-&gt;Story Path]]</tw-passagedata><tw-passagedata pid="13" name="Dinner time" tags="" position="875,225" size="100,100">Your stomach feels slightly filled up, and you are not as dehydrated anymore. You are feeling satisfied and full of energy!
+
+Your current supplies after eating:
+(set: $characterFood -= 1)
+(set: $characterDrink -= 1)
+Food: $characterFood
+Drink: $characterDrink
+Medicine: $characterMedicine
+
+After finishing your meal you hear a loud scream coming down from the alleyway outside the store.
+
+[[Investigate the screaming-&gt;Investigate]]
+[[Ignore and go in opposite direction-&gt;Not my business]]</tw-passagedata><tw-passagedata pid="14" name="Investigate" tags="" position="900,375" size="100,100">You see a woman trapped around by couple of freaks. They seem unable to reach her.
+
+[[Find a weapon-&gt;Weapon]]
+[[Run towards her and distract the freaks-&gt;Distraction]]
+[[Wish her luck and walk away-&gt;Not my business]]</tw-passagedata><tw-passagedata pid="15" name="Weapon" tags="" position="750,550" size="100,100">You manage to find 2x4 wood plank.
+
+(set: $characterEquipment to $characterEquipment +(array: "2x4 wood plank"))
+
+(if: $characterEquipment contains "2x4 wood plank")[You are ready to fight!]
+(else:)[No weapon might be a problem...]
+
+[[Battle cry-&gt;Shout]]
+[[Silent approach-&gt;Silence]]</tw-passagedata><tw-passagedata pid="16" name="Distraction" tags="" position="975,550" size="100,100">(if: $characterEquipment contains "2x4 wood plank")[You are ready to fight!]
+(else:)[No weapon might be a problem...]
+
+You got close too the freaks and started throwing rocks at them, looks like great time to start running!
+
+[[Run run runnnnnnn!!!!!-&gt;Running]]</tw-passagedata><tw-passagedata pid="17" name="Not my business" tags="" position="1225,75" size="100,100">Not taking the risk, I need to keep going...
+
+
+[[Continue-&gt;Solo]]</tw-passagedata><tw-passagedata pid="18" name="Shout" tags="" position="600,700" size="100,100">You definitely got their attention, looks like silent takedown is out of the question.
+
+[[Fight-&gt;Fight]]</tw-passagedata><tw-passagedata pid="19" name="Silence" tags="" position="800,700" size="100,100">You smack one of the freaks on the back of its head, it looks dead. You are forced to fight the other one.
+
+(set: $characterHealth -= 40)
+Your current health: $characterHealth
+
+(if: $characterHealth is &gt;=35)[You are wounded!]
+(else-if: $characterHealth is &lt;= 0)[You died! Rip...]
+
+[[Approach the woman-&gt;Hero]]</tw-passagedata><tw-passagedata pid="20" name="Running" tags="" position="1200,250" size="100,100">You keep on running...
+
+
+[[Continue-&gt;Solo]]</tw-passagedata><tw-passagedata pid="21" name="Fight" tags="" position="600,850" size="100,100">You barely managed to kill the freaks.
+
+
+(set: $characterHealth -= 80)
+Your current health: $characterHealth
+
+(if: $characterHealth is &gt;=35)[You are wounded!]
+(else-if: $characterHealth is &lt;= 0)[You died! Rip...]
+(else:)[Your wounds are fatal, you should probably heal!]
+
+[[Approach the woman-&gt;Hero]]</tw-passagedata><tw-passagedata pid="22" name="Hero" tags="" position="675,1000" size="100,100">"Thank you so much, if i weren't for you I be a goner! I don't know how can I repay you." says the woman.
+
+You introduce each other, her name is Jennifer. She looks badly wonded herself, but you took a beating from the confrontation with freaks too.
+
+"There is a camp of survivors not far from here, I could show you the way." says Jennifer.
+
+[[Give her the painkillers-&gt;Angel]]
+[[Use the painkillers-&gt;Needed this]]</tw-passagedata><tw-passagedata pid="23" name="Angel" tags="" position="50,875" size="100,100">"Bless you heart, now quick lets go before anymore of them show up!" said Jennifer.
+
+(set: $characterMedicine -= 1)
+
+Current medicine: $characterMedicine
+
+[[Continue-&gt;Camp]]</tw-passagedata><tw-passagedata pid="24" name="Needed this" tags="" position="225,775" size="100,100">The painkillers were definitely needed after this encounter.
+
+(set: $characterHealth += 20)
+(set: $characterMedicine -= 1)
+The painkillers restored 20 health.
+Current health: $characterHealth
+Current painkillers: $characterMedicine
+
+You and Jennifer proceed walking to the camp.
+
+[[Continue-&gt;Camp]]
+
+</tw-passagedata><tw-passagedata pid="25" name="Camp" tags="" position="150,1025" size="100,100">You arrive at the gates of the camp with Jennifer, the guard from the tower shouts "Who goes there?!"
+
+Jennifer: "It's me Jenny, this stranger helped me get away from freaks, she is safe!"
+
+Guard: "Go right in!"
+
+You enter the camp grounds.
+
+[[Continue-&gt;Inside the camp]]
+</tw-passagedata><tw-passagedata pid="26" name="Inside the camp" tags="" position="150,1175" size="100,100">Jennifer: "Make yourself feel at home, at this camp if you put your work in you will fit along just fine... The big boss does not tolerate laziness. I will introduce you to him whenever you feel ready."
+&lt;img src="https://tempassetsplease.yolasite.com/resources/camp.jpg" alt="Inside the camp"&gt;
+
+[[Listen to the camp band-&gt;Radio]]
+[[Relax by the fireplace-&gt;Fireplace]]
+[[Meet the boss of the camp-&gt;Boss meeting]]
+
+[[Player Statistics-&gt;Player Stats]]
+
+
+&lt;audio src="https://tempassetsplease.yolasite.com/resources/birds.mp3" autoplay loop&gt;
+
+
+[&lt;script&gt;
+aud.pause();
+aud.currentTime = 0;
+&lt;/script&gt;]</tw-passagedata><tw-passagedata pid="27" name="Character Creation" tags="" position="75,250" size="100,100">Character Creation:
+(set: $playerName to (prompt: "What is your character name?", ""))
+(set: $playerAge to (prompt: "What is your age?", ""))
+Character name: $playerName
+Character age: $playerAge
+Gender: (dropdown: bind $gender, "Male", "Female", "Other")
+Profession: (dropdown: bind $playerProfession, "Engineer", "Army", "Chef", "Scientist", "Doctor")
+
+{
+(if: $playerName is "" or $playerAge is "")[ [&lt;script&gt;alert("Name and age field cannot be empty!")&lt;/script&gt;][[Restart Character Creation-&gt;Character Creation]][ Make sure the textfields are not empty and age is a number!] ]
+(else:)[[[Continue-&gt;Backstory]]]
+}
+
+[&lt;script&gt;
+
+aud.play();
+aud.loop=true;
+
+&lt;/script&gt;]</tw-passagedata><tw-passagedata pid="28" name="Radio" tags="" position="25,1325" size="100,100">You decide to listen to the camp band with fellow camp members, it sure feels nice to stop for a while.
+
+[[Return-&gt;Inside the camp]]
+
+&lt;img src="https://tempassetsplease.yolasite.com/resources/animated_guitar_playing_3.gif" alt="Guitarist playing"&gt;
+
+&lt;audio src="https://tempassetsplease.yolasite.com/resources/Mirrors.mp3" autoplay loop&gt;
+
+</tw-passagedata><tw-passagedata pid="29" name="Fireplace" tags="" position="150,1325" size="100,100">Warm fire is just what you needed, feels so nice.
+
+[[Return-&gt;Inside the camp]]
+
+&lt;img src="https://tempassetsplease.yolasite.com/resources/source.gif" alt="Moving fire place camp"&gt;
+
+&lt;audio src="https://tempassetsplease.yolasite.com/resources/campFire.mp3" autoplay loop&gt;
+</tw-passagedata><tw-passagedata pid="30" name="Boss meeting" tags="" position="375,1025" size="100,100">You greet with the boss of the camp. His name is Jimmy The Kid.
+
+Jimmy The Kid: "I heard you saved one of ours champ. I am very grateful, I always show respect for people who give back to our camp community. Take this, might be useful."
+
+Jimmy hands you 3 coins.
+(set: $characterMoney += 3)
+Your total amount of coins is $characterMoney.
+
+Jimmy The Kid: "However, there is another favour I would like to ask you champ. You see the rumour is going around from the other camps in the area that there is huge abandoned house with plenty supplies stockpiled, you think you up for a job like this? I send couple of the people from my camp, but they never came back..."
+
+[[I can handle this-&gt;Mission one]]
+[[Let me think about it-&gt;Thinking about it]]
+
+[&lt;script&gt;
+
+aud.play();
+aud.loop=true;
+
+&lt;/script&gt;]</tw-passagedata><tw-passagedata pid="31" name="Mission one" tags="" position="675,1125" size="100,100">Jimmy The Kid: "Let's go champ. I wish you luck, and hope you come back my friend. I will pay you big money if you succeed... Keep heading north about 30 minute walk once you leave the camp gates, you can't miss it, the house number is 247."
+
+This is it, you accepted a very risky job. Now might be good time to stock up on some supplies in the camp before leaving...
+
+[[Head out-&gt;Outside the camp]]
+[[Visit a camp store-&gt;Store]]
+[[Visit a medical center-&gt;Medical Center]]
+[[Have some lunch-&gt;Kitchen]]
+
+[[Player Statistics-&gt;Player S]]
+
+</tw-passagedata><tw-passagedata pid="32" name="Thinking about it" tags="" position="350,1175" size="100,100">You decided to not rush the job from Jimmy straight away...
+
+Could be a good time to think about preparation.
+
+[[I think I'm ready-&gt;Mission one]]</tw-passagedata><tw-passagedata pid="33" name="Outside the camp" tags="" position="1200,800" size="100,100">You left the camp gates. Now which direction did Jimmy said to head towards?
+
+[[Go South-&gt;South]]
+[[Go East-&gt;East]]
+[[Go North-&gt;North]]
+[[Go West-&gt;West]]</tw-passagedata><tw-passagedata pid="34" name="Store" tags="" position="650,1300" size="100,100">Welcome to our camp store $playerName.
+
+How can I help you?
+
+{
+(if: $characterMoney is &gt;= 1)[
+[Items available:]&lt;br&gt;
+[[Protein bar (1 coin)-&gt;Sandwich]]
+[[Soft drink (1 coin)-&gt;Soft drink]]
+[[Alcoholic beverage (1 coin)-&gt;Alcoholic bevarage]]&lt;br&gt;
+[[Goodbye-&gt;Mission one]]
+]
+(else-if: $characterMoney is &lt;= 0)[
+[No sufficient funds! You have $playerMoney coins.]
+[[Goodbye-&gt;Mission one]]
+]
+}</tw-passagedata><tw-passagedata pid="35" name="Medical Center" tags="" position="530,1301" size="100,100">Welcome to the Medical Center $playerName.
+
+How can I help you?
+
+{
+(if: $characterMoney is &gt;= 1)[
+[Items available:]&lt;br&gt;
+[[Painkillers (Cost 1 coin)-&gt;Painkillers]]&lt;br&gt;
+[[Goodbye-&gt;Mission one]]
+]
+(else-if: $characterMoney is &lt;= 0)[
+[No sufficient funds! You have $playerMoney coins.]
+[[Goodbye-&gt;Mission one]]
+]
+}</tw-passagedata><tw-passagedata pid="36" name="Kitchen" tags="" position="750,1300" size="100,100">Welcome to our camp kitchen $playerName.
+
+How can I help you?
+
+{
+(if: $characterMoney is &gt;= 1)[
+[Items available:]&lt;br&gt;
+[[Meaty meal (1 coin)-&gt;Meat]]
+[[Vegetarian meal (1 coin)-&gt;Vegetarian]]
+[[A soup (1 coin)-&gt;soup]]&lt;br&gt;
+[[Goodbye-&gt;Mission one]]
+]
+(else-if: $characterMoney is &lt;= 0)[
+[No sufficient funds! You have $playerMoney coins.]
+[[Goodbye-&gt;Mission one]]
+]
+}</tw-passagedata><tw-passagedata pid="37" name="South" tags="" position="1225,975" size="100,100">South doesn't seem like the correct way...
+
+Better walk back.
+
+[[Walk back-&gt;Outside the camp]]</tw-passagedata><tw-passagedata pid="38" name="East" tags="" position="1050,775" size="100,100">East doesn't seem like the correct way...
+
+Better walk back.
+
+[[Walk back-&gt;Outside the camp]]</tw-passagedata><tw-passagedata pid="39" name="North" tags="" position="1925,150" size="100,100">North is the definitely the way, I see some large houses in the distance. However, there seems to be a couple of large households. Hmmmm...
+&lt;img src="https://tempassetsplease.yolasite.com/resources/1.jpg" alt="London houses"&gt;
+[[Go to number 237-&gt;237]]
+[[Go to number 247-&gt;247]]
+[[Go to number 245-&gt;245]]
+[[Go to number 244-&gt;244]]
+</tw-passagedata><tw-passagedata pid="40" name="West" tags="" position="1375,775" size="100,100">West doesn't seem like the correct way...
+
+Better walk back.
+
+[[Walk back-&gt;Outside the camp]]</tw-passagedata><tw-passagedata pid="41" name="237" tags="" position="1700,100" size="100,100">This house looks empty and abandoned, I don't think this is it.
+
+[[Check different house-&gt;North]]</tw-passagedata><tw-passagedata pid="42" name="247" tags="" position="1850,300" size="100,100">This is definitely the right place! Gotta find my way in.
+
+[[Try the front door-&gt;Front door]]
+[[Try the windows-&gt;Windows]]
+[[Try the back doors-&gt;Back door]]</tw-passagedata><tw-passagedata pid="43" name="245" tags="" position="2075,225" size="100,100">This house looks empty and abandoned, I don't think this is it.
+
+[[Check different house-&gt;North]]</tw-passagedata><tw-passagedata pid="44" name="244" tags="" position="2125,75" size="100,100">This house looks empty and abandoned, I don't think this is it.
+
+[[Check different house-&gt;North]]</tw-passagedata><tw-passagedata pid="45" name="Front door" tags="" position="1725,550" size="100,100">The door is locked and won't budge.
+
+[[Try different way-&gt;247]]</tw-passagedata><tw-passagedata pid="46" name="Windows" tags="" position="1850,550" size="100,100">Shut tight, no chance.
+
+[[Try different way-&gt;247]]</tw-passagedata><tw-passagedata pid="47" name="Back door" tags="" position="2000,550" size="100,100">You notice a freak walking around the back door, there might be no other way than to deal with it...
+
+Your current equipment:
+$characterEquipment
+(if: $characterEquipment contains "2x4 wood plank")[You are ready to fight!]
+(else:)[No weapon might be a problem...]
+
+[[Attack the freak-&gt;Back door fight]]</tw-passagedata><tw-passagedata pid="48" name="Back door fight" tags="" position="1875,700" size="100,100">You took some damage but you've dealt with the freak. Could he be the owner of the house?
+
+(if: $characterHealth is &gt;=35)[You are wounded!]
+(else-if: $characterHealth is &lt;= 0)[You died! Rip...]
+(else:)[Your wounds are fatal, you should probably heal!]
+
+[[Try the back door-&gt;Try backdoor]]
+[[Search the freak-&gt;Search body]]
+[[Heal-&gt;Heal]]</tw-passagedata><tw-passagedata pid="49" name="Try backdoor" tags="" position="1725,825" size="100,100">Locked. Hmmm... maybe the freak corpse had a key on him?
+
+[[Go back to the corpse-&gt;Search body]]</tw-passagedata><tw-passagedata pid="50" name="Search body" tags="" position="1975,825" size="100,100">You tap around his pockets thinking how gross it is to tap a dead body...
+
+One of the back pockets seems to have metal material inside it, you turn the body around and take it out. Luckily it looks like a house key.
+
+[[Approach the back door-&gt;Backdoor]]</tw-passagedata><tw-passagedata pid="51" name="Backdoor" tags="" position="1975,975" size="100,100">You insert the key but it doesn't seem to turn...
+
+[[Keep twisting it-&gt;Key]]</tw-passagedata><tw-passagedata pid="52" name="Key" tags="" position="1725,975" size="100,100">Finally... the key worked.
+
+[[Enter the house-&gt;The big house]]</tw-passagedata><tw-passagedata pid="53" name="The big house" tags="" position="1850,1050" size="100,100">Damn, this house is enormous. Time to look for the supplies.
+
+[[Check the kitchen-&gt;Kitchen House]]
+[[Check the living room-&gt;Living room]]
+[[Check the basement-&gt;Basement]]
+[[Check the bedrooms-&gt;Bedrooms]]</tw-passagedata><tw-passagedata pid="54" name="Living room" tags="" position="1725,1350" size="100,100">Nothing interesting here, better look somewhere else...
+
+[[Back to main door-&gt;The big house]]</tw-passagedata><tw-passagedata pid="55" name="Kitchen House" tags="" position="1875,1275" size="100,100">Nothing interesting here, better look somewhere else...
+
+[[Back to main door-&gt;The big house]]</tw-passagedata><tw-passagedata pid="56" name="Bedrooms" tags="" position="1525,1125" size="100,100">Nothing interesting here, better look somewhere else...
+
+[[Back to main door-&gt;The big house]]
+[[Deep search-&gt;Bedroom search]]</tw-passagedata><tw-passagedata pid="57" name="Basement" tags="" position="2050,1350" size="100,100">You see a safe with a keypad lock, this is where the supplies must be hidden unfortunately the safe is still locked. 
+
+[[Approach the keypad-&gt;Keypad]]
+[[Return to the house-&gt;The big house]]
+</tw-passagedata><tw-passagedata pid="58" name="Bedroom search" tags="" position="1525,1300" size="100,100">You see a note.
+&lt;div class="paper"&gt;
+    &lt;div class="paper-content"&gt;
+&lt;textarea autofocus&gt;
+I thought I am safe in such a big house... I spent so much money on this architecture, thick walls and still, they somehow got through. Seems like I don't have much time left but I have no regrets in my life. The truth is no one is safe...
+
+If you find this note that probably means I am either one of them or dead. Whoever you are, I hope the contents within the safe serve you well. Good luck!
+
+The safe keypad code is 420...
+&lt;/textarea&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+This is it, this must be the keypad combination.
+
+[[Head back to basement-&gt;The big house]]</tw-passagedata><tw-passagedata pid="59" name="Keypad" tags="" position="2400,400" size="100,100">Enter the three-digit combination
+&lt;div class="keypadEntry"&gt;[***]&lt;entry|&lt;/div&gt;
+&lt;div class="keypadTable"&gt;
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;(link-repeat: "1")[(display: "NumberOne")]&lt;/td&gt;
+		&lt;td&gt;(link-repeat: "2")[(display: "NumberTwo")]&lt;/td&gt;
+		&lt;td&gt;(link-repeat: "3")[(display: "NumberThree")]&lt;/td&gt;
+	 &lt;/tr&gt;
+	 &lt;tr&gt;
+		 &lt;td&gt;(link-repeat: "4")[(display: "NumberFour")]&lt;/td&gt;
+		 &lt;td&gt;(link-repeat: "5")[(display: "NumberFive")]&lt;/td&gt;
+		 &lt;td&gt;(link-repeat: "6")[(display: "NumberSix")]&lt;/td&gt;
+	 &lt;/tr&gt;
+	 &lt;tr&gt;
+		 &lt;td&gt;(link-repeat: "7")[(display: "NumberSeven")]&lt;/td&gt;
+		 &lt;td&gt;(link-repeat: "8")[(display: "NumberEight")]&lt;/td&gt;
+		 &lt;td&gt;(link-repeat: "9")[(display: "NumberNine")]&lt;/td&gt;
+	 &lt;/tr&gt;
+	 &lt;tr&gt;
+		 &lt;td&gt;(link-repeat: "Clear")[(display: "Clear")]&lt;/td&gt;
+		 &lt;td&gt;(link-repeat: "0")[(display: "NumberZero")]&lt;/td&gt;
+		 &lt;td&gt;(link-repeat: "Enter")[(display: "Enter")]&lt;/td&gt;
+	 &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+[[Return to the basement-&gt;Basement]]</tw-passagedata><tw-passagedata pid="60" name="Left the big house" tags="" position="2375,575" size="100,100">You left the house with supplies, time to head back to the camp.
+
+You can see couple of freaks approaching.
+
+[[Attack them-&gt;Fight time]]
+[[Go around-&gt;Run time]]</tw-passagedata><tw-passagedata pid="61" name="Fight time" tags="" position="2300,725" size="100,100">You managed to kill some freaks. You took some damage.
+
+
+
+You are a bit exhausted after the fight.
+
+[[Run away-&gt;Im out]]
+[[Keep fighting-&gt;Not giving up]]</tw-passagedata><tw-passagedata pid="62" name="Run time" tags="" position="2575,700" size="100,100">You decide to take longer but safer way back to the camp.
+
+[[Head back to the camp-&gt;Back to camp]]</tw-passagedata><tw-passagedata pid="63" name="Im out" tags="" position="2225,875" size="100,100">You attempt to run away, but due to exhaustion the freaks caught up with you.</tw-passagedata><tw-passagedata pid="64" name="Not giving up" tags="" position="2375,875" size="100,100">You stood your ground and kept fighting the freaks. You become overhelmed as more and more of them come.
+
+At least your days finished with honour and dignity.</tw-passagedata><tw-passagedata pid="65" name="Back to camp" tags="" position="2550,850" size="100,100">Almost there...
+
+
+[[Continue-&gt;Back camp time]]</tw-passagedata><tw-passagedata pid="66" name="Back camp time" tags="" position="2600,1075" size="100,100">You arrived at the camp, the guard at the tower opens the gate for you.
+
+[[Report accomplished mission to Jimmy-&gt;Mission one success]]</tw-passagedata><tw-passagedata pid="67" name="Mission one success" tags="" position="2350,1075" size="100,100">On the way to Jimmy's HQ you see a gathering of people at the camp, looks like they are grieving.
+
+[[Ask what whappened?-&gt;What is this]]</tw-passagedata><tw-passagedata pid="68" name="What is this" tags="" position="2350,1225" size="100,100">"Couple of our camp members died defending the gates while some mad men tried to break into our camp. Jennifer was one of them, you helped her before didn't you? Bless you, at least she died supporting our people." said the camp member.
+
+You are feeling [[depressed.-&gt;Depression is not good]]</tw-passagedata><tw-passagedata pid="69" name="Depression is not good" tags="" position="2600,1225" size="100,100">You sigh...
+
+Jennifer... she was one of the people you've met since this whole apocalypse freak show started, she showed you a safe place to be at. No matter how much good we do these days, you never know what is going to happen tomorrow...
+
+The people who did this, they must face punishment. I will make sure Jennifer's death was't for nothing.
+
+
+[[To be continued-&gt;The end]]</tw-passagedata><tw-passagedata pid="70" name="The end" tags="" position="2400,1375" size="100,100">The end of the chapter/segment.
+
+Thank you for playing.
+
+[[Play again!-&gt;Welcome screen]]
+(link: "Exit Game")[&lt;script&gt;window.close()&lt;/script&gt;]</tw-passagedata><tw-passagedata pid="71" name="NumberOne" tags="" position="2625,75" size="100,100">{
+		(if: $entry's length &lt; $entryLength)[
+				(set: $entered to 1)
+				(set: $entry to it + (text: $entered))
+				(replace: ?entry)[$entry]
+				]
+}</tw-passagedata><tw-passagedata pid="72" name="NumberTwo" tags="" position="2750,75" size="100,100">{
+		(if: $entry's length &lt; $entryLength)[
+			(set: $entered to 2)
+			(set: $entry to it + (text: $entered) )
+			(replace: ?entry)[$entry]
+		]
+}</tw-passagedata><tw-passagedata pid="73" name="NumberThree" tags="" position="2875,75" size="100,100">{
+	(if: $entry's length &lt; $entryLength)[
+		(set: $entered to 3)
+		(set: $entry to it + (text: $entered))
+		(replace: ?entry)[$entry]
+		]
+}</tw-passagedata><tw-passagedata pid="74" name="NumberFour" tags="" position="2625,200" size="100,100">{
+		(if: $entry's length &lt; $entryLength)[
+			(set: $entered to 4)
+			(set: $entry to it + (text: $entered) )
+			(replace: ?entry)[$entry]
+		]
+}</tw-passagedata><tw-passagedata pid="75" name="NumberFive" tags="" position="2750,200" size="100,100">{
+		(if: $entry's length &lt; $entryLength)[
+			(set: $entered to 5)
+			(set: $entry to it + (text: $entered) )
+			(replace: ?entry)[$entry]
+		]
+}</tw-passagedata><tw-passagedata pid="76" name="NumberSix" tags="" position="2875,200" size="100,100">{
+		(if: $entry's length &lt; $entryLength)[
+			(set: $entered to 6)
+			(set: $entry to it + (text: $entered) )
+			(replace: ?entry)[$entry]
+		]
+}</tw-passagedata><tw-passagedata pid="77" name="NumberSeven" tags="" position="2625,325" size="100,100">{
+		(if: $entry's length &lt; $entryLength)[
+			(set: $entered to 7)
+			(set: $entry to it + (text: $entered) )
+			(replace: ?entry)[$entry]
+		]
+}</tw-passagedata><tw-passagedata pid="78" name="NumberEight" tags="" position="2750,325" size="100,100">{
+		(if: $entry's length &lt; $entryLength)[
+			(set: $entered to 8)
+			(set: $entry to it + (text: $entered) )
+			(replace: ?entry)[$entry]
+		]
+}</tw-passagedata><tw-passagedata pid="79" name="NumberNine" tags="" position="2875,325" size="100,100">{
+		(if: $entry's length &lt; $entryLength)[
+			(set: $entered to 9)
+			(set: $entry to it + (text: $entered) )
+			(replace: ?entry)[$entry]
+		]
+}</tw-passagedata><tw-passagedata pid="80" name="NumberZero" tags="" position="2750,450" size="100,100">{
+		(if: $entry's length &lt; $entryLength)[
+			(set: $entered to 0)
+			(set: $entry to it + (text: $entered) )
+			(replace: ?entry)[$entry]
+		]
+}</tw-passagedata><tw-passagedata pid="81" name="Clear" tags="" position="2625,450" size="100,100">{
+		(set: $entry to "" )
+		(replace: ?entry)[***]
+}</tw-passagedata><tw-passagedata pid="82" name="Enter" tags="" position="2875,450" size="100,100">{
+	(if: $entry is $solution)[
+		(goto: "Success")
+	] (else:)[
+	&lt;script&gt;alert("Incorrect code. Try again!")&lt;/script&gt;
+	]
+	
+}</tw-passagedata><tw-passagedata pid="83" name="Success" tags="" position="2875,575" size="100,100">You managed to open the safe with correct keypad code.
+
+Time to gather as much as supplies as you can and get the hell out of here.
+
+
+
+[[Leave the house-&gt;Left the big house]]</tw-passagedata><tw-passagedata pid="84" name="Painkillers" tags="" position="550,1450" size="100,100">Here are your painkillers!
+(set: $characterMoney -= 1)
+(set: $characterMedicine +=1)
+Your current painkillers: $characterMedicine.
+Your current coins: $characterMoney.
+
+{(if: $characterMoney is &lt;= 0)[
+[No sufficient funds! You have $playerMoney coins.]
+[[Goodbye-&gt;Mission one]]
+] (else-if: $characterMoney is &gt;= 1)[
+[[Return to Medical Center-&gt;Medical Center]]
+]
+}</tw-passagedata><tw-passagedata pid="85" name="Sandwich" tags="" position="625,1600" size="100,100">Here is your protein bar!
+(set: $characterMoney -= 1)
+Your current coins: $characterMoney.
+{(if: $characterHealth is &gt;= 100)[
+[Your health is $characterHealth out of 100, but at least you feel filled up!]
+] (else-if: $characterHealth &lt; 100) [
+(set: $characterHealth += 10)
+You restored 10 health.
+Your current health: $characterHealth.
+]}
+
+
+
+{(if: $characterMoney is &lt;= 0)[
+[No sufficient funds! You have $playerMoney coins.]
+[[Goodbye-&gt;Mission one]]
+] (else-if: $characterMoney is &gt;= 1)[
+[[Return to the store-&gt;Store]]
+]
+}</tw-passagedata><tw-passagedata pid="86" name="Soft drink" tags="" position="650,1450" size="100,100">Here is your soft drink!
+(set: $characterMoney -= 1)
+Your current coins: $characterMoney.
+{(if: $characterHealth is &gt;= 100)[
+[Your health is $characterHealth out of 100, but at least you feel filled up!]
+] (else-if: $characterHealth &lt; 100) [
+(set: $characterHealth += 10)
+You restored 10 health.
+Your current health: $characterHealth.
+]}
+
+{(if: $characterMoney is &lt;= 0)[
+[No sufficient funds! You have $playerMoney coins.]
+[[Goodbye-&gt;Mission one]]
+] (else-if: $characterMoney is &gt;= 1)[
+[[Return to the store-&gt;Store]]
+]
+}
+
+</tw-passagedata><tw-passagedata pid="87" name="Alcoholic bevarage" tags="" position="725,1600" size="100,100">Here is your alcoholic bevarage!
+(set: $characterMoney -= 1)
+Your current coins: $characterMoney.
+{(if: $characterHealth is &gt;= 100)[
+[Your health is $characterHealth out of 100, but at least you feel filled up!]
+] (else-if: $characterHealth &lt; 100) [
+(set: $characterHealth += 0)
+You restored 0 health.
+Your current health: $characterHealth.
+]}
+
+You feel healthier but in reality you are just tipsy.
+
+
+{(if: $characterMoney is &lt;= 0)[
+[No sufficient funds! You have $playerMoney coins.]
+[[Goodbye-&gt;Mission one]]
+] (else-if: $characterMoney is &gt;= 1)[
+[[Return to the store-&gt;Store]]
+]
+}</tw-passagedata><tw-passagedata pid="88" name="Meat" tags="" position="900,1475" size="100,100">Here is your meaty meal!
+(set: $characterMoney -= 1)
+Your current coins: $characterMoney.
+{(if: $characterHealth is &gt;= 100)[
+[Your health is $characterHealth out of 100, but at least you feel filled up!]
+] (else-if: $characterHealth &lt; 100) [
+(set: $characterHealth += 10)
+You restored 10 health.
+Your current health: $characterHealth.
+]}
+
+{(if: $characterMoney is &lt;= 0)[
+[No sufficient funds! You have $playerMoney coins.]
+[[Goodbye-&gt;Mission one]]
+] (else-if: $characterMoney is &gt;= 1)[
+[[Return to the store-&gt;Kitchen]]
+]
+}
+</tw-passagedata><tw-passagedata pid="89" name="Vegetarian" tags="" position="950,1350" size="100,100">Here is your vegetarian meal!
+(set: $characterMoney -= 1)
+Your current coins: $characterMoney.
+{(if: $characterHealth is &gt;= 100)[
+[Your health is $characterHealth out of 100, but at least you feel filled up!]
+] (else-if: $characterHealth &lt; 100) [
+(set: $characterHealth += 10)
+You restored 10 health.
+Your current health: $characterHealth.
+]}
+
+
+{(if: $characterMoney is &lt;= 0)[
+[No sufficient funds! You have $playerMoney coins.]
+[[Goodbye-&gt;Mission one]]
+] (else-if: $characterMoney is &gt;= 1)[
+[[Return to the store-&gt;Kitchen]]
+]
+}</tw-passagedata><tw-passagedata pid="90" name="soup" tags="" position="1025,1250" size="100,100">Here is your soup of the day! It is the same tomato soup everyday.
+(set: $characterMoney -= 1)
+Your current coins: $characterMoney.
+{(if: $characterHealth is &gt;= 100)[
+[Your health is $characterHealth out of 100, but at least you feel filled up!]
+] (else-if: $characterHealth &lt; 100) [
+(set: $characterHealth += 10)
+You restored 10 health.
+Your current health: $characterHealth.
+]}
+
+
+{(if: $characterMoney is &lt;= 0)[
+[No sufficient funds! You have $playerMoney coins.]
+[[Goodbye-&gt;Mission one]]
+] (else-if: $characterMoney is &gt;= 1)[
+[[Return to the store-&gt;Kitchen]]
+]
+}</tw-passagedata><tw-passagedata pid="91" name="Tutorial" tags="" position="350,75" size="100,100">Welcome to Decay of the Rising.
+
+The concept of the game introduces variety of passages that can link to alternative scenarios. The game captures a concept of zombie survival, it aims to outline choices such as silent approach, eating to restore health or using painkillers in the text based narrative aspect. Wrong choice can lead to the death which causes a player to restart the game. Some choices will allow player to return to previous passages.
+
+The game would normally require couple of playthroughs to fully experience the ability of choices that the player has.
+
+Gameplay:
+The game operates by selecting available options on the screen.
+Audio is
+Save option saves progress of the current passage. Saving again overrides the last save file.
+Loading will begin the game from last saved passage (if any).
+Restart option will restart the whole game up to the menu screen.
+
+Tips:
+Pay attention to the narrative.
+Check the player statistics whenever available.
+Be cautious before proceeding to the next option.
+Some options may not extist when you continue to next passage, decide carefully.
+Remember to save the game.
+
+[[Welcome screen&lt;-Menu]]
+
+</tw-passagedata><tw-passagedata pid="92" name="Player Stats" tags="" position="0,1175" size="100,100">Statistics of the charater:
+Charater name: $playerName
+Character age: $playerAge
+Gender: $gender
+Profession: $playerProfession
+
+Your well being:
+Health: $characterHealth/100
+
+Your current supplies:
+Food: $characterFood
+Drink: $characterDrink
+Medicine: $characterMedicine
+Bullets: $characterBullets
+Money: $characterMoney
+
+Equipment:
+$characterEquipment
+
+[[Return-&gt;Inside the camp]]</tw-passagedata><tw-passagedata pid="93" name="Player S" tags="" position="925,1100" size="100,100">Statistics of the charater:
+Charater name: $playerName
+Character age: $playerAge
+Gender: $gender
+Profession: $playerProfession
+
+Your well being:
+Health: $characterHealth/100
+
+Your current supplies:
+Food: $characterFood
+Drink: $characterDrink
+Medicine: $characterMedicine
+Bullets: $characterBullets
+Money: $characterMoney
+
+Equipment:
+$characterEquipment
+
+[[Return-&gt;Mission one]]</tw-passagedata><tw-passagedata pid="94" name="Heal" tags="" position="2050,700" size="100,100">{(if: $characterMedicine &lt;= 0)[
+[Not enough painkillers!]
+] (else-if: $characterHealth &lt; 100) [
+(set: $characterMedicine -= 1)
+(set: $characterHealth += 20)
+You have used a pack of painkillers.
+You restored 20 health.
+Your current health: $characterHealth.
+Leftover painkillers: $characterMedicine.
+The pain is slowly going away...
+]}
+
+[[Return-&gt;Back door fight]]</tw-passagedata><tw-passagedata pid="95" name="Solo" tags="" position="1450,75" size="100,100">You continue walking down the street. However, you see a bunch of freaks from every direction...
+
+[[Try to fight them-&gt;Fight attempt]]</tw-passagedata><tw-passagedata pid="96" name="Fight attempt" tags="" position="1475,250" size="100,100">Your current equipment:
+$characterEquipment
+(if: $characterEquipment contains "2x4 wood plank")[You are ready to fight!]
+(else:)[No weapon might be a problem...]
+
+You attempt to fight the freaks with your bare hands, you manage to kill some of them, but there is too many approaching.
+
+(set: $characterHealth -= 100)
+Your current health: $characterHealth
+
+(if: $characterHealth is &gt;=35)[You are wounded!]
+(else-if: $characterHealth is &lt;= 0)[You died! Rip...]
+(else:)[Your wounds are fatal, you should probably heal!]</tw-passagedata></tw-storydata>
+
+
+
+
+</body></html>

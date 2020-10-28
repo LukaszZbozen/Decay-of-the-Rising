@@ -1,0 +1,6 @@
+Execute 'Decay of the Rising' file to launch the game in browser.
+
+Game tested on Microsoft Edge, Google Chrome and Firefox. Any other browser may not offer fully functioning game.
+
+For faster game performance play on Firefox.
+
